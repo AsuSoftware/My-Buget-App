@@ -1,0 +1,111 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.buget {
+  display: flex;
+  align-items: center;
+}
+
+.btn-add-buget {
+  margin-left: 14px;
+}
+
+.add-buget {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+hr {
+  width: 75%;
+  background: #585756;
+  margin-bottom: 20px;
+}
+
+.add-product {
+  font-size: 52px;
+  position: absolute;
+  bottom: 46%;
+  left: 43%;
+  z-index: 233;
+  cursor: pointer;
+}
+
+// box
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(0%);
+}
+
+#container p {
+  color: #fff!important;
+}
+
+.container-info {
+  display: flex;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  background: #531B95;
+  width: 78%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.title {
+  display: flex;
+  margin: 15px 20px;
+}
+
+
+.price {
+  margin: 15px 20px;
+  display: flex;
+}
+
+
+.product {
+  margin-right: 10px;
+}

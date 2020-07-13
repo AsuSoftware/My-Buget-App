@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      My Buget App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div class="top">
+    <div class="container-buget">
+      <div class="buget">
+        <div class="info-buget">
+          <p>Buget</p>
+          <p>{{buget}}$</p>
+        </div>
+        <div class="btn-add-buget">
+          <ion-icon class="add-buget" (click)="openBugetModal()" name="add-circle"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="container-total">
+      <p>Total</p>
+      <p>{{total}}$</p>
+    </div>
+  </div>
+  <hr>
+  <div id="container">
+    <!-- ngFor element in add product-->
+    <div class="box" *ngFor="let product of products; let i = index">
+      <div class="container-info" (click)="deleteProduct(i)">
+        <div class="title">
+          <p class="product">{{product.title}} x{{product.quantity}}</p>
+        </div>
+        <div class="price">
+          <p>Price: {{product.price}}$</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <ion-icon class="add-product" (click)="openModal()" name="add-circle"></ion-icon>
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-footer>
+
+
+<!-- <ion-input type="number" value="3"></ion-input>
+ <ion-input type="text" value="Product name"></ion-input>  -->

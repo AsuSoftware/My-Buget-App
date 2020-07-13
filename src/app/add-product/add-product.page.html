@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Product</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="contenitor">
+    <div class="name-product">
+      <ion-label>Product Name</ion-label>
+      <ion-input type="text" class="input-product" [(ngModel)]="productName" name="title" value="Product name">
+      </ion-input>
+    </div>
+    <div class="quantity-product">
+      <ion-label>Quantity</ion-label>
+      <ion-input type="number" class="input-product" [(ngModel)]="quantityProduct" name="quantity" value="3">
+      </ion-input>
+    </div>
+    <div class="price-product">
+      <ion-label>Price</ion-label>
+      <ion-input type="number" class="input-product" [(ngModel)]="priceProduct" name="price" value="4.50"></ion-input>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-icon class="save-product" (click)="saveProduct()" name="checkmark-circle"></ion-icon>
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-footer>

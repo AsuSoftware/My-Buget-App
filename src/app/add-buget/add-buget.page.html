@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Buget</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="name-product">
+    <ion-label>Your Buget</ion-label>
+    <ion-input type="number" class="input-product" [(ngModel)]="buget" name="title" value="0">
+    </ion-input>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-icon class="save-buget" (click)="saveBuget()" name="checkmark-circle"></ion-icon>
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-footer>

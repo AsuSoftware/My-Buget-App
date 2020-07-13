@@ -1,0 +1,7 @@
+{
+  "name": "my-buget-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
