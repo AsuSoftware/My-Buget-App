@@ -2,8 +2,8 @@ import { MemoryStorageService } from './../services/memory-storage.service';
 import { Component, OnInit } from '@angular/core';
 import { Products } from '../interfaces/products';
 import { ModalController } from '@ionic/angular';
-import { AddProductPage } from './../add-product/add-product.page';
-import { AddBugetPage } from '../add-buget/add-buget.page';
+import { AddProductPage } from './components/add-product/add-product.page';
+import { AddBugetPage } from './components/add-buget/add-buget.page';
 
 
 @Component({
@@ -13,6 +13,7 @@ import { AddBugetPage } from '../add-buget/add-buget.page';
 })
 export class HomePage implements OnInit {
 
+  // best practice dar nu punem access modifiers nicaieri... public, private ceva? :))
 
   products: Products[];
   buget = 0;
